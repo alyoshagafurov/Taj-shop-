@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAJSHOP — мужская одежда, обувь и аксессуары · Душанбе</title>
+  <meta name="description" content="TAJSHOP — мужская одежда, обувь и аксессуары в Душанбе. Качество и доступные цены. Доставка по городу, оплата при получении." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="landing" id="top">
+
+  <div class="announce"><div class="announce__track" id="announceTrack"></div></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <button class="icon-btn header__burger" id="menuBtn" aria-label="Меню"><i class="ti ti-menu-2"></i></button>
+      <a href="index.html" class="logo" aria-label="TAJSHOP"><span class="logo__mark"><span class="logo__t">T</span><span class="logo__s">S</span></span><span class="logo__word">TAJ<b>SHOP</b></span></a>
+      <div class="search" id="searchBox"><i class="ti ti-search"></i><input type="search" id="searchInput" placeholder="Поиск: лоферы, футболка, поло…" autocomplete="off" /></div>
+      <div class="header__actions">
+        <a class="btn btn--primary header__cta" href="catalog.html">Каталог</a>
+        <button class="icon-btn header__search-toggle" id="searchToggle" aria-label="Поиск"><i class="ti ti-search"></i></button>
+        <button class="icon-btn" id="accountBtn" aria-label="Аккаунт"><i class="ti ti-user"></i></button>
+        <button class="icon-btn" id="wishBtn" aria-label="Избранное"><i class="ti ti-heart"></i><span class="badge" id="wishCount">0</span></button>
+        <button class="icon-btn" id="cartBtn" aria-label="Корзина"><i class="ti ti-shopping-cart"></i><span class="badge" id="cartCount">0</span></button>
+      </div>
+    </div>
+    <nav class="catnav" id="catNav"></nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__main">
+          <div class="hero__content">
+            <span class="hero__eyebrow">Магазин №1 для мужчин в Душанбе</span>
+            <h1 class="hero__title">Стиль, который<br>выбирают в Душанбе</h1>
+            <p class="hero__sub">Замшевые лоферы, футболки премиум-хлопка, поло и брюки. Качество, которое видно — по цене, которая радует.</p>
+            <div class="hero__btns">
+              <a class="btn btn--primary btn--lg" href="catalog.html">Смотреть каталог <i class="ti ti-arrow-right"></i></a>
+              <a class="btn btn--ghost btn--lg" href="https://t.me/tajshopmagazin" target="_blank" rel="noopener"><i class="ti ti-brand-telegram"></i> Telegram</a>
+            </div>
+            <div class="hero__stats">
+              <div><b>356K+</b><span>подписчиков</span></div>
+              <div><b>1500+</b><span>довольных клиентов</span></div>
+              <div><b>4.9<i class="ti ti-star-filled"></i></b><span>средняя оценка</span></div>
+            </div>
+          </div>
+          <div class="hero__photo"><img src="images/p49.jpg" alt="TAJSHOP — мужская одежда" /></div>
+        </div>
+        <div class="hero__side">
+          <a class="promo promo--orange" href="catalog.html?sale=1">
+            <img class="promo__bg" src="images/p02.jpg" alt="" loading="lazy" />
+            <span class="promo__tag">Sale до −25%</span>
+            <h3>Летняя<br>распродажа</h3>
+            <span class="promo__link">Смотреть <i class="ti ti-arrow-right"></i></span>
+          </a>
+          <a class="promo promo--dark" href="catalog.html?cat=obuv">
+            <img class="promo__bg" src="images/p03.jpg" alt="" loading="lazy" />
+            <span class="promo__tag">New</span>
+            <h3>Новинки<br>обуви</h3>
+            <span class="promo__link">Смотреть <i class="ti ti-arrow-right"></i></span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Витрина категорий -->
+    <section class="showcase-sec">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Каталог по категориям</span><h2 class="section-title">Выберите, что ищете</h2></div>
+        <div class="showcase" id="showcase"></div>
+      </div>
+    </section>
+
+    <!-- Хиты продаж -->
+    <section class="featured-sec">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div><span class="eyebrow">Выбор покупателей</span><h2 class="section-title">Хиты продаж</h2></div>
+          <a class="btn btn--ghost" href="catalog.html">Весь каталог <i class="ti ti-arrow-right"></i></a>
+        </div>
+        <div class="grid" id="featured"></div>
+        <div class="featured-cta"><a class="btn btn--primary btn--lg" href="catalog.html">Смотреть все товары <i class="ti ti-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <!-- Выгоды -->
+    <section class="benefits-sec">
+      <div class="container benefits">
+        <div class="benefit"><i class="ti ti-truck-delivery"></i><div><b>Доставка в день заказа</b><span>По всему Душанбе</span></div></div>
+        <div class="benefit"><i class="ti ti-cash-banknote"></i><div><b>Оплата при получении</b><span>Проверяете перед оплатой</span></div></div>
+        <div class="benefit"><i class="ti ti-refresh"></i><div><b>Обмен и возврат</b><span>3 дня на примерку</span></div></div>
+        <div class="benefit"><i class="ti ti-discount-2"></i><div><b>Честные цены</b><span>Без переплат</span></div></div>
+      </div>
+    </section>
+
+    <!-- О магазине -->
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div class="about__media" id="aboutMedia"></div>
+        <div class="about__text">
+          <span class="eyebrow">О магазине</span>
+          <h2 class="section-title">Нас выбирают 356 000 человек</h2>
+          <p>С 2019 года мы одеваем мужчин Душанбе в качественную одежду и обувь. Лично отбираем каждую модель — привозим только то, что носили бы сами.</p>
+          <ul class="about__list">
+            <li><i class="ti ti-circle-check"></i> Проверенное качество — выбираем вручную</li>
+            <li><i class="ti ti-circle-check"></i> Магазин в центре: ТЦ «Аниса», Дом Печати</li>
+            <li><i class="ti ti-circle-check"></i> Доставка по всему Таджикистану</li>
+          </ul>
+          <a class="btn btn--primary" href="catalog.html">Перейти в каталог <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как заказать -->
+    <section class="steps" id="how">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Просто и удобно</span><h2 class="section-title">Как сделать заказ</h2></div>
+        <div class="steps__grid">
+          <div class="step"><span class="step__n">1</span><i class="ti ti-shopping-bag"></i><b>Выберите товар</b><p>Найдите модель в каталоге, выберите цвет и размер.</p></div>
+          <div class="step"><span class="step__n">2</span><i class="ti ti-clipboard-check"></i><b>Оформите заказ</b><p>Добавьте в корзину и заполните контакты. Можно без регистрации.</p></div>
+          <div class="step"><span class="step__n">3</span><i class="ti ti-truck-delivery"></i><b>Доставим вам</b><p>Привезём по Душанбе в день заказа. Оплата при получении.</p></div>
+          <div class="step"><span class="step__n">4</span><i class="ti ti-mood-smile"></i><b>Примеряйте</b><p>Проверяете и примеряете. Обмен и возврат — 3 дня.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Нам доверяют</span><h2 class="section-title">Отзывы покупателей</h2></div>
+        <div class="reviews__grid" id="reviewsGrid"></div>
+      </div>
+    </section>
+
+    <!-- CTA баннер -->
+    <section class="cta-sec">
+      <div class="container cta-banner">
+        <div class="cta-banner__txt">
+          <h2>Готовы обновить гардероб?</h2>
+          <p>Более 500 моделей в наличии. Доставим сегодня, оплата при получении.</p>
+        </div>
+        <div class="cta-banner__btns">
+          <a class="btn btn--accent btn--lg" href="catalog.html">Смотреть каталог <i class="ti ti-arrow-right"></i></a>
+          <a class="btn btn--ghost btn--lg cta-banner__tg" href="https://t.me/tajshopmagazin" target="_blank" rel="noopener"><i class="ti ti-brand-telegram"></i> Написать в Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contacts">
+      <div class="container contacts__grid">
+        <div class="contacts__info">
+          <span class="eyebrow">Контакты</span>
+          <h2 class="section-title">Приходите к нам</h2>
+          <ul class="contacts__list">
+            <li><i class="ti ti-map-pin"></i><div><b>Адрес</b><span>Душанбе, Дом Печати, ТЦ «Аниса», 1 этаж<br>рядом с Шоколадницей, ТЦ Ситора</span></div></li>
+            <li><i class="ti ti-clock"></i><div><b>Часы работы</b><span>Ежедневно 9:00 – 21:00</span></div></li>
+            <li><i class="ti ti-phone"></i><div><b>Телефон</b><span><a href="tel:+992200442222">+992 200-44-2222</a></span></div></li>
+            <li><i class="ti ti-brand-telegram"></i><div><b>Telegram</b><span><a href="https://t.me/tajshopmagazin" target="_blank" rel="noopener">@tajshopmagazin</a></span></div></li>
+          </ul>
+          <a class="btn btn--primary" href="https://maps.google.com/?q=Душанбе+Дом+Печати+ТЦ+Аниса" target="_blank" rel="noopener"><i class="ti ti-map-2"></i> Открыть в картах</a>
+        </div>
+        <div class="contacts__map">
+          <div class="mapcard"><i class="ti ti-map-pin-filled"></i><b>ТЦ «Аниса», Дом Печати</b><span>Душанбе · 1 этаж</span><a class="mapcard__link" href="https://maps.google.com/?q=Душанбе+Дом+Печати+ТЦ+Аниса" target="_blank" rel="noopener">Построить маршрут <i class="ti ti-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col footer__about">
+        <a href="index.html" class="logo logo--light"><span class="logo__mark"><span class="logo__t">T</span><span class="logo__s">S</span></span><span class="logo__word">TAJ<b>SHOP</b></span></a>
+        <p>Хорошее качество и доступная цена. Мужская одежда, обувь и аксессуары в Душанбе.</p>
+        <div class="footer__social"><a href="https://t.me/tajshopmagazin" target="_blank" rel="noopener" aria-label="Telegram"><i class="ti ti-brand-telegram"></i></a><a href="https://instagram.com/magazin1.nav" target="_blank" rel="noopener" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a></div>
+      </div>
+      <div class="footer__col"><h4>Каталог</h4><ul>
+        <li><a href="catalog.html?cat=obuv">Обувь</a></li><li><a href="catalog.html?cat=shlepki">Шлёпки</a></li><li><a href="catalog.html?cat=futbolki">Футболки</a></li><li><a href="catalog.html?cat=polo">Тенниски</a></li><li><a href="catalog.html?cat=bryuki">Брюки и бриджи</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Магазин</h4><ul>
+        <li><a href="#about">О нас</a></li><li><a href="#how">Как заказать</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#contacts">Контакты</a></li><li><a href="admin.html">Админ-панель</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Контакты</h4><ul class="footer__contacts">
+        <li><i class="ti ti-map-pin"></i> Душанбе, Дом Печати, ТЦ «Аниса», 1 этаж</li><li><i class="ti ti-clock"></i> Ежедневно 9:00 – 21:00</li><li><i class="ti ti-phone"></i> <a href="tel:+992200442222">+992 200-44-2222</a></li><li><i class="ti ti-brand-telegram"></i> <a href="https://t.me/tajshopmagazin" target="_blank" rel="noopener">@tajshopmagazin</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom container"><span>© 2026 TAJSHOP. Все права защищены.</span><span class="footer__pay"><i class="ti ti-credit-card"></i> Visa · MasterCard · Корти Милли · Наличные</span></div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
