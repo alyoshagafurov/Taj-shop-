@@ -286,6 +286,7 @@
   /* ---------- Глобальные клики ---------- */
   function bindGlobal() {
     document.addEventListener("click", (e) => {
+      if (e.target.closest("[data-close]")) { closeAll(); return; }
       const cat = e.target.closest(".catnav__item[data-cat], .chip[data-cat], [data-gocat]");
       if (cat) { e.preventDefault(); goCat(cat.dataset.cat || cat.dataset.gocat); if ($("#menuDrawer").classList.contains("show")) closeAll(); return; }
       if (e.target.closest("[data-mclose]")) { closeAll(); return; }
